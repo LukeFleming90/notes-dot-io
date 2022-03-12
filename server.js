@@ -49,6 +49,9 @@ app.use('/user', UserRouter);
 app.get("/", (req, res) => {
     res.render("Index.jsx");
 });
+app.get("/inspiration", (req, res) => {
+  res.render("Inspiration.jsx");
+});
 
 //////////////////////////////////////////////
 // Server Listener
