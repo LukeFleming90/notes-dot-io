@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 .signinpage {
     display: flex;
     align-items: center;
@@ -47,9 +49,9 @@
     bottom: 10px;
     right: 10px;
     line-height: 25px;
-    font-family: 'Indie Flower';
     overflow: hidden;
     outline: none;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .holes {
@@ -72,4 +74,8 @@
 
 .hole-bottom {
     bottom: 10%;
+}
+
+a {
+    text-decoration: none
 }

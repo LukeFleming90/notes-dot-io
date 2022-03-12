@@ -25,7 +25,7 @@ class Index extends React.Component {
                             <a className="nav-link active pt-3" aria-current="page" href="#">About</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/pricing">Inspiration</a>
+                            <a className="nav-link pt-3" href="/pricing">Inspiration</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="/user/login">
