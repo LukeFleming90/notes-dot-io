@@ -5,12 +5,12 @@ class Index extends React.Component {
     render() {
         return (
             <DefaultLayout>
-                <nav class="navbar navbar-light bg-light">
-                    <a class="navbar-brand" href="#">
+                <nav className="navbar navbar-light bg-light p-4">
+                    <a className="navbar-brand d-flex flex-row" href="#">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
+                            width="31"
+                            height="31"
                             fill="currentColor"
                             className="bi bi-journal"
                             viewBox="0 0 16 16"
@@ -18,11 +18,11 @@ class Index extends React.Component {
                             <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
                             <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
                         </svg>
-                        Notes.io
+                        <h2>Notes.io</h2>
                     </a>
                     <ul className="nav justify-content-end">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">About</a>
+                            <a className="nav-link active pt-3" aria-current="page" href="#">About</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="/pricing">Inspiration</a>
@@ -45,31 +45,37 @@ class Index extends React.Component {
                             <div className="d-grid gap-2 d-md-flex justify-content-md-start">
                                 <a className="nav-link" href="/user/signup">
                                     <button type="button" className="btn btn-primary btn-lg px-4 me-md-2">Sign Up</button>
-                                </a>
-                                <button type="button" className="btn btn-outline-secondary btn-lg px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Learn More
-                                </button>
-                                <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div className="modal-dialog">
-                                        <div className="modal-content">
-                                            <div className="modal-header">
-                                                <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
-                                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div className="modal-body">
-                                                ...
-                                            </div>
-                                            <div className="modal-footer">
-                                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                <button type="button" className="btn btn-primary">Save changes</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>                                  
+                                </a>                                 
                             </div>
                         </div>
                     </div>
                 </div>
+
+                
+<button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div className="modal-dialog">
+    <div className="modal-content">
+      <div className="modal-header">
+        <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div className="modal-body">
+        ...
+      </div>
+      <div className="modal-footer">
+        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" className="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
             </DefaultLayout>
         )
     }

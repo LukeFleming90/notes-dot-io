@@ -8,15 +8,14 @@ class New extends React.Component {
                 <form action="/notes" method="post">
                     <fieldset>
                         <legend>Create a New Note</legend>
-                        {/* <label>
-                            NAME:<input type="text" name="name" placeholder="enter fruit name" />
+                        <label>
+                            Title:<input type="text" name="title" placeholder="enter note title" />
                         </label>
                         <label>
-                            COLOR:<input type="text" name="color" placeholder="enter fruit color" />
+                            Body:<input type="text" name="body" placeholder="enter note details" />
                         </label>
-                        <label> READY TO EAT:<input type="checkbox" name="readyToEat" /> </label> */}
                     </fieldset>
-                    <input type="submit" value="create New fruit" />
+                    <input type="submit" value="create New note" />
                 </form>
             </DefaultLayout>
         )

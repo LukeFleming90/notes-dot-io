@@ -52,7 +52,7 @@ class Login extends React.Component {
                             <label for="floatingInput">Email address</label>
                         </div>
                         <div className="form-floating">
-                            <input type="text" className="form-control" id="floatingPassword" placeholder="Password" name="password" required/>
+                            <input type="password" className="form-control" id="floatingPassword" placeholder="Password" name="password" required/>
                             <label for="floatingPassword">Password</label>
                         </div>
 

@@ -31,13 +31,18 @@ class DefaultLayout extends React.Component {
                         crossOrigin="anonymous"
                     />
 
-                    {/* Jquery */}
+                    {/* Bootstrap */}                    
                     <script
-                        src="https://code.jquery.com/jquery-3.6.0.min.js"
-                        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-                        crossOrigin="anonymous">
+                        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+                        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+                        crossOrigin="anonymous">    
                     </script>
-
+                    <script
+                        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+                        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+                        crossOrigin="anonymous">    
+                    </script>
+                    
                      {/* OUR CSS AND JS */}
                     <link rel="stylesheet" href="/css/app.css" />
                     <script src="/app.js" defer></script>
@@ -52,8 +57,8 @@ class DefaultLayout extends React.Component {
                             <a href="https://linkedin.com/in/luke-ryan-fleming" target="_blank">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    width="16"
-                                    height="16"
+                                    width="35"
+                                    height="35"
                                     fill="currentColor"
                                     className="bi bi-linkedin"
                                     viewBox="0 0 16 16"
@@ -64,8 +69,8 @@ class DefaultLayout extends React.Component {
                             <a href="https://github.com/LukeFleming90" target="_blank">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    width="16"
-                                    height="16"
+                                    width="35"
+                                    height="35"
                                     fill="currentColor"
                                     className="bi bi-github"
                                     viewBox="0 0 16 16"
