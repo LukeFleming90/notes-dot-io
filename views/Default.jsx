@@ -2,7 +2,7 @@ const React = require('react');
 
 class DefaultLayout extends React.Component {
     render() {
-        const { fruits } = this.props;
+        const { notes } = this.props;
         return (
             <html lang="en">
                 <head>

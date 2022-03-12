@@ -5,7 +5,7 @@ class Login extends React.Component {
     render() {
         return (
             <DefaultLayout>
-                <main className="form-signin signinpage d-flex justify-content-center">
+                {/* <main className="form-signin signinpage d-flex justify-content-center">
                     <form action="/user/login" method="post">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -28,33 +28,46 @@ class Login extends React.Component {
                             <label for="floatingPassword">Password</label>
                         </div>
                     
-                        <div className="checkbox mb-3">
-                            <label>
-                                <input type="checkbox" value="remember-me"/> Remember me
-                            </label>
-                        </div>
                         <button className="w-100 btn btn-lg btn-primary" type="submit" value="Login">Sign in</button>
                         <p className="mt-5 mb-3 text-muted">© 2022-2022</p>
                     </form>
-                </main>
-                {/* <div>
+                </main> */}
+                <div className="form-signin signinpage d-flex justify-content-center">
                     <form action="/user/login" method="post">
-                        <div className="mb-3">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-journal"
+                            viewBox="0 0 16 16"
+                        >
+                            <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                            <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                        </svg>
+                        <h1 className="h3 mb-3 fw-normal">Please Sign In</h1>
+
+                        <div className="form-floating">
+                            <input type="text" className="form-control" id="floatingInput" placeholder="name@example.com" name="username" required/>
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <div className="form-floating">
+                            <input type="text" className="form-control" id="floatingPassword" placeholder="Password" name="password" required/>
+                            <label for="floatingPassword">Password</label>
+                        </div>
+
+                        {/* <div className="mb-3">
                             <label for="exampleInputEmail1" className="form-label">Email address</label>
-                            <input className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" name="username" required/>
-                            <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+                            <input className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" placeholder="name@example.com" name="username" required/>
                         </div>
                         <div className="mb-3">
                             <label for="exampleInputPassword1" className="form-label">Password</label>
                             <input type="password" name="password" required class="form-control" id="exampleInputPassword1"/>
-                        </div>
-                        <div className="mb-3 form-check">
-                            <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
-                            <label className="form-check-label" for="exampleCheck1">Check me out</label>
-                        </div>
-                        <button type="submit" className="btn btn-primary" value="Login">Submit</button>
+                        </div> */}
+                        <button type="submit" className="w-100 btn btn-lg btn-primary" value="Login">Submit</button>
+                        <p className="mt-5 mb-3 text-muted">© 2022-2022</p>
                     </form>
-                </div> */}
+                </div>
             </DefaultLayout>
         )
     }
