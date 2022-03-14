@@ -1,5 +1,6 @@
 const React = require('react');
 const DefaultLayout = require('../Default.jsx');
+const moment = require('moment');
 
 class Index extends React.Component {
     render() {
@@ -46,25 +47,25 @@ class Index extends React.Component {
                         </button>
                     </a>
                 </div>
-                <div class="paper">
-                    <div class="lines">
-                        <div class="text" contenteditable spellCheck="false">
+                <div className="paper">
+                    <div className="lines">
+                        <div className="text" contenteditable spellCheck="false">
                             {
                                 notes.map((note) => (
-                                    <article>
+                                    <div>
                                         <a href={`/notes/${note._id}`}>
                                             <p style={{fontFamily: 'Permanent Marker'}}>
-                                                {note.title}
+                                                {note.title} - {moment(note.createdAt).format('MMMM Do YYYY')}
                                             </p>
                                         </a>
-                                    </article>
+                                    </div>
                                 ))
                             }
                         </div>
                     </div>
-                    <div class="holes hole-top"></div>
-                    <div class="holes hole-middle"></div>
-                    <div class="holes hole-bottom"></div>
+                    <div className="holes hole-top"></div>
+                    <div className="holes hole-middle"></div>
+                    <div className="holes hole-bottom"></div>
                 </div>
             </DefaultLayout>
         )
