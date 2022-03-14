@@ -54,7 +54,7 @@ class Index extends React.Component {
                         </div>
                         <div>
                           <h2>Home.io</h2>
-                          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                          <p>Home.io was intended to be a web application for travelers, transplants, and locals to get a perspective of the nightlife created and maintained by locals.</p>
                           <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#homeModal">
                             Learn More
                           </a>
@@ -68,9 +68,11 @@ class Index extends React.Component {
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                              Notes.io has been a few different products in our short lifetime, click on the inspiration tab to see our full journey from the early beginnings to where we are today.
+                              <h5>R.I.P. Monday March 7th</h5>
+                              <hr/>
+                              <h5>Relatioinal Data Issues</h5>
+                              <p>Home.io originally was supposed to have 3 models: users, bars, and bartenders. A bar does not need to have a bartender, but a bartender can have an array of bars where they work. Ultimately I could not figure out how to share data between both entities. If I figured out how to build that relationship the next level was adding favorites for each user to track your friends favorite bars and bartenders in different cities.</p>
                             </div>
-                            <h4>R.I.P. Monday March 7th</h4>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             </div>
@@ -93,24 +95,26 @@ class Index extends React.Component {
                         </div>
                         <div>
                           <h2>Share.io</h2>
-                          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                          <p>Share.io was intended to be a paid web application where users can create notes for free, and for a monthly price pay to share notes between different people.</p>
                           <a href="#" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#shareModal">
                             Learn More
                           </a>
                         </div>
                       </div>
-                      <div class="modal fade" id="shareModal" tabindex="-1" aria-labelledby="shareModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="shareModalLabel">Share.io</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <div className="modal fade" id="shareModal" tabindex="-1" aria-labelledby="shareModalLabel" aria-hidden="true">
+                        <div className="modal-dialog modal-dialog-centered">
+                          <div className="modal-content">
+                            <div className="modal-header">
+                              <h5 className="modal-title" id="shareModalLabel">Share.io</h5>
+                              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
-                              Notes.io has been a few different products in our short lifetime, click on the inspiration tab to see our full journey from the early beginnings to where we are today.
-                            </div>
-                            <h4>R.I.P. Wednesday March 9th</h4>
-                            <div class="modal-footer">
+                            <div className="modal-body">
+                              <h5>R.I.P. Wednesday March 9th</h5>
+                              <hr/>
+                              <h5>Many to Many Failure</h5>
+                              <p>Similar to Home.io I wanted to create different types of notes, where a user could have free form, recipes, journal entry, and more types. I could not figure out to dynamically render each form type and display different field types based on the user selection.</p>                      
+                            </div>                           
+                            <div className="modal-footer">
                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             </div>
                           </div>
@@ -132,27 +136,27 @@ class Index extends React.Component {
                         </div>
                         <div>
                           <h2>Wear.io</h2>
-                          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                          <p>Wear.io was intended to be a web application to track how often a person wears different clothes as well as the weather conditions that day. A user could also search across their historical data.</p>
                           <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#wearModal">
                             Learn More
                           </a>
                         </div>
                       </div>
-                      <div class="modal fade" id="wearModal" tabindex="-1" aria-labelledby="wearModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="wearModalLabel">Wear.io</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <div className="modal fade" id="wearModal" tabindex="-1" aria-labelledby="wearModalLabel" aria-hidden="true">
+                        <div className="modal-dialog modal-dialog-centered">
+                          <div className="modal-content">
+                            <div className="modal-header">
+                              <h5 className="modal-title" id="wearModalLabel">Wear.io</h5>
+                              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
+                            <div className="modal-body">
                               <h5>R.I.P. Thursday March 10th</h5>
                               <hr/>
-                              <h5>Many to Many Failure</h5>
-                              <p>This is a placeholder text to see how this will render on the screen to determine if I want to include this layout.</p>
+                              <h5>Search Issues</h5>
+                              <p>In addition to relating multiple objects, I could not figure out to get Search to work, so Wear.io just ended up being a bunch of different show pages with no discernable way to look back at past data other than manually looking into a item.</p>
                             </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <div className="modal-footer">
+                              <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             </div>
                           </div>
                         </div>

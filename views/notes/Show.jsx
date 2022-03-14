@@ -52,7 +52,7 @@ class Show extends React.Component {
                         </button>
                     </a>
                     <form action={`/notes/${ note._id }?_method=DELETE`} method="POST">
-                        <input type="submit" className='btn btn-outline-warning btn-md btn-block mx-2' value="Delete" />
+                        <input type="submit" className='btn btn-outline-danger btn-md btn-block mx-2' value="Delete" />
                     </form>
                 </div>
                 <div className="paper">
