@@ -1,9 +1,8 @@
 # Notes App
-An app that is supposed to mimic the functionality of the social media app Twitter with some features being limited.
+An app that allows you to securely capture notes and store them online.
 
 # Getting Started
-- [Heroku Link](https://moses-twitter-react.herokuapp.com/)
-- [Trello board](https://github.com/mosesb1/twitter-react-app/projects/1)
+- [Heroku Link](https://notes-dot-io.herokuapp.com/)
 
 
 # Technologies Used
